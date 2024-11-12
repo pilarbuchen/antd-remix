@@ -1,4 +1,100 @@
 @import '../../../src/styles/theme.module.scss';
 
-.root {
+.container {
+  min-height: 100vh;
+  background: #ffffff;
+  width: 100%;
+}
+
+.hero {
+  background: linear-gradient(135deg, #1890ff 0%, #096dd9 100%);
+  padding: 100px 20px;
+  text-align: center;
+  color: white;
+}
+
+.section {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  &:nth-child(even) {
+    background: #f8f9fa;
+  }
+}
+
+.card {
+  height: 100%;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+  }
+}
+
+.statCard {
+  text-align: center;
+  padding: 24px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.button {
+  border-radius: 8px;
+  font-weight: 500;
+  padding: 0 32px;
+  height: 48px;
+  font-size: 16px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: white;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+  background: #001529;
+  padding: 40px 20px;
+  color: white;
+}
+
+.heroContent {
+  margin-top: 40px;
+}
+
+.heroParagraph {
+  color: white;
+  font-size: 18px;
+}
+
+.sectionTitle {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.featureIcon {
+  font-size: 32px;
+  color: #1890ff;
+}
+
+.statValue {
+  color: #1890ff;
+}
+
+.ctaSection {
+  text-align: center;
+  background: #f8f9fa;
+}
+
+.ctaParagraph {
+  font-size: 18px;
 }
