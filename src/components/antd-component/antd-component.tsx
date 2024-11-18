@@ -76,7 +76,7 @@ const AntdComponent = () => (
         {/* Hero Section */}
         <div className={`${styles.hero}`}>
             <Space direction="vertical" size="large">
-                <Title style={{ color: 'white', marginTop: 40 }}>Welcome to Our Platform</Title>
+                <Title style={{ color: '#3e36ce', marginTop: 40 }}>Welcome to Our Platform</Title>
                 <Paragraph style={{ color: 'white', fontSize: '18px' }}>
                     Build beautiful interfaces with Ant Design components
                 </Paragraph>
@@ -96,7 +96,7 @@ const AntdComponent = () => (
             <Title level={2} style={{ textAlign: 'center', marginBottom: 60, color: '#881919' }}>
                 Key Features
             </Title>
-            <Row gutter={[32, 32]}>
+            <Row gutter={[32, 32]} className={styles.row}>
                 {features.map((feature, index) => (
                     <Col xs={24} md={8} key={index}>
                         <Card className={styles.card}>
@@ -105,7 +105,9 @@ const AntdComponent = () => (
                                 size="middle"
                                 style={{ width: '100%', textAlign: 'center' }}
                             >
-                                <Title level={4}>{feature.title}</Title>
+                                <Title level={4} className={styles.title}>
+                                    {feature.title}
+                                </Title>
                                 <Text type="secondary">{feature.description}</Text>
                             </Space>
                         </Card>
@@ -119,8 +121,11 @@ const AntdComponent = () => (
             <Row gutter={[32, 32]}>
                 <Col xs={24} md={8}>
                     <div className={styles.statCard}>
-                        <Progress type="circle" percent={75} />
-                        <Title level={4} style={{ marginTop: 16 }}>
+                        <Progress type="line" percent={75} className={styles.progress} />
+                        <Title
+                            level={4}
+                            style={{ marginTop: 16, fontFamily: 'Impact, sans-serif' }}
+                        >
                             Project Completion
                         </Title>
                     </div>

@@ -2,7 +2,7 @@
 
 .container {
     min-height: 100vh;
-    background: #ffffff;
+    background: #9b21af;
     width: 100%;
 }
 
@@ -32,6 +32,7 @@
     &:hover {
         transform: translateY(-4px);
     }
+    color: #2067d2;
 }
 
 .statCard {
@@ -97,4 +98,14 @@
 
 .ctaParagraph {
     font-size: 18px;
+}
+.title {
+    color: #5e155d;
+    text-align: center;
+}
+.row {
+    color: #c03f3f;
+}
+.progress {
+    background-color: #d02525;
 }
